@@ -30,6 +30,7 @@ body {
 .screen .display,
 .screen .total {
   border: none;
+  border-radius: 0;
 }
 .screen .total {
   text-align: right;
