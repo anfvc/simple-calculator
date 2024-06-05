@@ -4,14 +4,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: grey;
+  background-color: rgb(68, 67, 70);
+  margin: 0;
 }
 
 .container {
   width: 30%;
   max-width: 450px;
+  min-width: 300px;
   padding: 1rem;
-  box-shadow: 8px -8px 16px #5a5858, -8px 8px 16px #5a5858;
+  box-shadow: 8px -8px 16px #2c2b2b, -8px 8px 16px #2c2b2b;
+  background-color: #1d1919;
 }
 
 .screen {
@@ -22,15 +25,20 @@ body {
 }
 .screen .display,
 .screen .total {
+  color: #d4d4d2;
+}
+.screen .display,
+.screen .total {
   border: none;
 }
 .screen .total {
   text-align: right;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .screen input {
   padding: 0.8rem;
   font-size: 2rem;
+  background-color: rgb(65, 65, 65);
 }
 
 .keys {
@@ -49,6 +57,10 @@ body {
   align-items: center;
   padding-bottom: 1rem;
 }
+.keys .row1 button:not(:last-of-type) {
+  background-color: #d4d4d2;
+  color: black;
+}
 .keys .row6 {
   width: 100%;
   display: flex;
@@ -57,16 +69,24 @@ body {
 }
 .keys .row6 button:first-of-type {
   width: 50%;
+  font-weight: bold;
 }
 .keys button {
   width: 20%;
   padding: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.3rem;
   border: 1px solid transparent;
+  font-weight: 500;
+  background-color: #505050;
+  color: white;
+}
+.keys button:last-of-type {
+  background-color: #ff9500;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */

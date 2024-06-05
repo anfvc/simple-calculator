@@ -40,10 +40,4 @@ function deleteChar() {
   display.value = display.value.slice(0, -1);
 }
 
-display.addEventListener("input", () => {
-  if (display.value === "0") {
-    display.value = "";
-  }
-});
-
 console.log((89 * 100) / 100);
