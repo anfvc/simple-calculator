@@ -8,26 +8,40 @@
   </head>
   <body>
     <div class="container">
-      <input type="text" class="display" readonly />
+      <div class="screen">
+        <input type="text" class="display" readonly />
+        <input type="text" class="total" readonly />
+      </div>
       <div class="keys">
-        <button onclick="tapButton('+')">+</button>
-        <button onclick="tapButton('7')">7</button>
-        <button onclick="tapButton('8')">8</button>
-        <button onclick="tapButton('9')">9</button>
-        <button onclick="tapButton('-')">-</button>
-        <button onclick="tapButton('4')">4</button>
-        <button onclick="tapButton('5')">5</button>
-        <button onclick="tapButton('6')">6</button>
-        <button onclick="tapButton('*')">*</button>
-        <button onclick="tapButton('1')">1</button>
-        <button onclick="tapButton('2')">2</button>
-        <button onclick="tapButton('3')">3</button>
-        <button onclick="tapButton('/')">/</button>
-        <button onclick="tapButton('0')">0</button>
-        <button onclick="tapButton(',')">,</button>
-        <button onclick="total('=')">=</button>
-        <button onclick="clearDisplay('C')">C</button>
-        <button onclick="deleteChar()">DE</button>
+        <div class="row1">
+          <button onclick="clearDisplay('C')">C</button>
+          <button onclick="deleteChar()">DE</button>
+          <button onclick="tapButton('/')">/</button>
+          <button onclick="tapButton('%')">%</button>
+        </div>
+        <div class="row2">
+          <button onclick="tapButton('7')">7</button>
+          <button onclick="tapButton('8')">8</button>
+          <button onclick="tapButton('9')">9</button>
+          <button onclick="tapButton('+')">+</button>
+        </div>
+        <div class="row3">
+          <button onclick="tapButton('4')">4</button>
+          <button onclick="tapButton('5')">5</button>
+          <button onclick="tapButton('6')">6</button>
+          <button onclick="tapButton('-')">-</button>
+        </div>
+        <div class="row4">
+          <button onclick="tapButton('1')">1</button>
+          <button onclick="tapButton('2')">2</button>
+          <button onclick="tapButton('3')">3</button>
+          <button onclick="tapButton('*')">*</button>
+        </div>
+        <div class="row6">
+          <button onclick="tapButton('0')">0</button>
+          <button onclick="tapButton(',')">,</button>
+          <button onclick="total('=')">=</button>
+        </div>
       </div>
     </div>
   </body>

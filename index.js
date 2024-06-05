@@ -3,17 +3,12 @@ console.log(display);
 
 function tapButton(character) {
 
-  if (display.value === "0") {
-    display.value = character
-  } else {
-    display.value += character;
-
-  }
+  display.value += character
 
 }
 
 function clearDisplay() {
-  display.value = "0";
+  display.value = "";
 }
 
 function total() {
@@ -21,6 +16,7 @@ function total() {
     display.value = eval(display.value);
   } catch (error) {
     display.value = "Syntax Error";
+    display.value = "";
   }
 }
 
