@@ -4,26 +4,32 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: grey;
 }
 
 .container {
   width: 30%;
-  border: 1px solid black;
+  max-width: 450px;
+  padding: 1rem;
+  box-shadow: 8px -8px 16px #5a5858, -8px 8px 16px #5a5858;
 }
 
 .screen {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  overflow: auto;
 }
-.screen .display {
-  border-bottom: none;
+.screen .display,
+.screen .total {
+  border: none;
 }
 .screen .total {
-  border-top: none;
+  text-align: right;
+  font-size: 2rem;
 }
 .screen input {
-  padding: 1rem;
+  padding: 0.8rem;
   font-size: 2rem;
 }
 
@@ -32,11 +38,16 @@ body {
   display: flex;
   flex-direction: column;
 }
-.keys .row1, .keys .row2, .keys .row3, .keys .row4, .keys .row5 {
+.keys .row1,
+.keys .row2,
+.keys .row3,
+.keys .row4,
+.keys .row5 {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 1rem;
 }
 .keys .row6 {
   width: 100%;
@@ -44,10 +55,18 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.keys .row6 button:first-of-type {
+  width: 50%;
+}
 .keys button {
   width: 20%;
   padding: 1rem;
   font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
 }
 
 /*# sourceMappingURL=styles.css.map */

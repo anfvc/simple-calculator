@@ -10,13 +10,13 @@
     <div class="container">
       <div class="screen">
         <input type="text" class="display" readonly />
-        <input type="text" class="total" readonly />
+        <input type="text" class="total" readonly placeholder="0" />
       </div>
       <div class="keys">
         <div class="row1">
           <button onclick="clearDisplay('C')">C</button>
           <button onclick="deleteChar()">DE</button>
-          <button onclick="tapButton('/')">/</button>
+          <button onclick="tapButton('÷')">÷</button>
           <button onclick="tapButton('%')">%</button>
         </div>
         <div class="row2">
@@ -35,15 +35,15 @@
           <button onclick="tapButton('1')">1</button>
           <button onclick="tapButton('2')">2</button>
           <button onclick="tapButton('3')">3</button>
-          <button onclick="tapButton('*')">*</button>
+          <button onclick="tapButton('x')">X</button>
         </div>
         <div class="row6">
           <button onclick="tapButton('0')">0</button>
           <button onclick="tapButton(',')">,</button>
-          <button onclick="total('=')">=</button>
+          <button onclick="totalResult('=')">=</button>
         </div>
       </div>
     </div>
   </body>
-  <script src="./index.js"></script>
+  <script src="./calculator.js"></script>
 </html>

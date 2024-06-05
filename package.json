@@ -4,7 +4,7 @@
   "description": "This will be a simple project using vanilla JavaScript to brush up concepts.",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass styles.scss styles.css -w"
+    "compile": "sass styles.scss styles.css -w"
   },
   "keywords": [],
   "author": "",

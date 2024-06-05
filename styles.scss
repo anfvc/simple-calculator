@@ -4,29 +4,34 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: grey;
 }
 
 .container {
   width: 30%;
-  border: 1px solid black;
+  max-width: 450px;
+  padding: 1rem;
+  box-shadow: 8px -8px 16px #5a5858, -8px 8px 16px #5a5858;
 }
-
 
 .screen {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  overflow: auto;
 
-  .display {
-    border-bottom: none;
+  .display,
+  .total {
+    border: none;
   }
 
   .total {
-    border-top: none;
+    text-align: right;
+    font-size: 2rem;
   }
 
   input {
-    padding: 1rem;
+    padding: 0.8rem;
     font-size: 2rem;
   }
 }
@@ -36,26 +41,36 @@ body {
   display: flex;
   flex-direction: column;
 
-  .row1, .row2, .row3, .row4, .row5 {
+  .row1,
+  .row2,
+  .row3,
+  .row4,
+  .row5 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 1rem;
   }
   .row6 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    button:first-of-type {
+      width: 50%;
+    }
   }
 
   button {
     width: 20%;
     padding: 1rem;
     font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    border: 1px solid transparent
   }
-
 }
-
-
-
