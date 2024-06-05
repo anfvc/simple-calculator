@@ -12,4 +12,4 @@ To run this project, please do the following:
 
 ### Demo
 
-A demo to the project can be found [Here](!https://simple-calculator-vpqz.onrender.com/)
+A demo to the project can be found [Here](https://simple-calculator-vpqz.onrender.com/)
